@@ -1,0 +1,26 @@
+This test is a web application that is almost functioning.  Hibernate 4.2 and Spring 3.2 are setup properly.
+
+This is a banking app that lists customers and their accounts in 3 views:
+1.  Displays all customers and all accounts in 2 tables.
+2.  Displays a customer and all their accounts.
+3.  Displays an account's details.
+
+We are trying to test your ability to read through a project, understand how it is setup and implement a bean converter.  As your computer science training should have taught you, you never want to send a DAO object to the front end.  Therefore, you will need to write a bean converter that will fill the data output object used by the JSPs (which are already complete).
+
+A couple things to note:
+1.  We are assuming you have knowledge of Spring, but little to no knowledge of Hibernate.
+2.  AccountController is the main end point for this app.
+
+What you need to do:
+1.  You will need to complete AccountConverterImpl and CustomerConverterImpl. (This is the PRIMARY TASK. If you do nothing else, complete this.)
+2.  Dollar amounts should be formatted in US Currency		Hint: java.text.*;
+3.  Dates should be formatted as 01/24/2014 05:40 PM		Hint: java.text.*;
+
+This test should not take much time.  This is meant to be simple.  We aren't trying to trick you, we just want to get an idea of how you think through problems and how you like to go about solving coding issues.  Our goal is for this test app to be implemented text book style.  Real world conditions always vary and we may ask you to talk to how compromises must be made when designing systems around a timeline.  Also, we like to see code reuse wherever possible.  You shouldn't need to refactor anything above and beyond what you write.  You may google anything you'd like, as though you were on the job.
+
+The application start URL is:
+http://localhost:8080/tp/index.html
+
+
+Extra credit:
+Modify AccountService/AccountController to validate the input (if there is any) and handle exceptions.  Consider if there is no data in the database or an invalid id is provided.
